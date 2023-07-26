@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':RobotCore')
+    implementation project(path: ':FtcLib')
+
+//    implementation group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+//    implementation ('com.konghq:unirest-java:3.11.09') {
+//        exclude module: 'gson'
+////        exclude module: 'jetified-http-core'
+//    }
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.7'
+    implementation project(path: ':FtcRobotController')
+
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

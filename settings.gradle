@@ -1,0 +1,5 @@
+include ':FtcRobotController'
+include ':RobotCore'
+include ':FtcLib'
+include ':Hardware'
+include ':app', ':TeamCode'
